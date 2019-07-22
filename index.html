@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<link href="css/base.css" rel="stylesheet" type="text/css"/>
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="js/jslunbotu.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+ $('#nav ul li').hover(function(){//加载所需鼠标悬浮时间元素
+	  
+	  $('#nav ul li').removeClass('li_1'); //去掉加载标签里的class名
+	  $(this).addClass('li_1');//给当前所有元素加li_1这个class名字
+	  
+	   	   },function(){
+	  $('#nav ul li').removeClass('li_1'); //去掉加载标签里的class名
+			  
+			   });	
+	
+	
+	})
+	
+	
+	
+	//轮播图开始
+	
+	//轮播图结束
+  
+</script>
+<title>冰雪归来单职业</title>
+</head>
+
+<body>
+    <div id="body1">
+
+	
+
+     <div id="nav" name="nav"><!---nav开始------------------------------------->
+    	<div class="nav_inner">
+        	<ul class="ul_1">
+            	<li class="li_1"><a href="#">官网首页</a></li>
+                <li class="li_2"><a href="https://www.lanzous.com/i4i00na">下载中心</a></li>
+                <li><a href="cz.html">游戏充值</a></li>
+                <li><a href="#">新手指南</a></li>
+                <li><a href="#">游戏公告</a></li>
+                <li><a href="#">企业招聘</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li class="li_3"><a href="#">玩家论坛</a></li>
+            </ul>
+          </div><!---inner内部------------------------------------>
+      </div><!---nav结束------------------------------------->
+      <div id="content">
+      		 
+             <div class="content_1">
+             		<div class="xiazai01">
+                        <ul class="ul_1">
+                            <li class="li_1"><a  class="a1" href="https://www.lanzous.com/i4i00na"></a></li>
+                            <li class="li_2"><a  class="a2"href="https://www.lanzous.com/i4i00na">游戏注册</a></li>
+                            <li class="li_3"><a  class="a3"href="cz.html">游戏充值</a></li>
+                        </ul>
+                    </div>
+             
+             
+                 <!-- 轮播图代码 开始 -->
+                	<div id="playBox">
+                    <div class="pre"></div>
+                    <div class="next"></div>
+                    <div class="smalltitle">
+                      <ul>
+                        <li class="thistitle"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                    <ul class="oUlplay">
+                       <li><img width="480px" height="310px" src="images/1.jpg"/></li>
+                       <li><img width="480px" height="310px"  src="images/2.jpg"/></li>
+                       <li><img width="480px" height="310px"  src="images/3.jpg"/></li>
+                       <li><img width="480px" height="310px"  src="images/4.jpg"/></li>
+                       <li><img width="480px" height="310px"  src="images/5.jpg"/></li>
+                       <li><img width="480px" height="310px"  src="images/6.jpg"/></li>
+                    </ul>
+                </div>
+                 <!-- 轮播图代码 结束 -->
+                 
+                 <div class="xinwen1">
+                 	 <div class="xinwen2">
+                            <!-- 代码部分begin----------------------->
+                            <div class="lanrenzhijia">
+                                <div class="tab">
+                                    <a href="javascript:;" class="on">公告</a>
+                                    <a href="javascript:;">最新咨询</a>
+                                    <a href="javascript:;">活动</a>
+                                    
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li style="display:block;"><p><a href="https://www.lanzous.com/i4i00na">冰雪一区</a></p><a  class="a11" href="https://www.lanzous.com/i4i00na"> 新区6月23日 10点开放 </a></li>
+                                        <li><a  class="a2" href="https://www.lanzous.com/i4i00na">新区6月5日 20点30开放</a><br>游戏交流群：707116910<br>YY担保：1450901943</li>
+                                        <li style="color:red">【人民币回收】装备回收只限二战区：满100元起步回收：盘古·刃 3000元；盘古生肖套 800元；盘古·甲衣 500元；起源·刃 1000元；起源·甲 300元；起源·衣 300元；时装 寒冰刃 500元；时装 灸火刃 1200元；时装 寒冰衣服 200元。
+										</li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>
+                    
+						<script>
+                        $(function(){
+                            $(".lanrenzhijia .tab a").mouseover(function(){
+                                $(this).addClass('on').siblings().removeClass('on');
+                                var index = $(this).index();
+                                number = index;
+                                $('.lanrenzhijia .content li').hide();
+                                $('.lanrenzhijia .content li:eq('+index+')').show();
+                            });
+                            
+                            var auto = 1;  //等于1则自动切换，其他任意数字则不自动切换
+                            if(auto ==1){
+                                var number = 0;
+                                var maxNumber = $('.lanrenzhijia .tab a').length;
+                                function autotab(){
+                                    number++;
+                                    number == maxNumber? number = 0 : number;
+                                    $('.lanrenzhijia .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+                                    $('.lanrenzhijia .content ul li:eq('+number+')').show().siblings().hide();
+                                }
+                                var tabChange = setInterval(autotab,3000);
+                                //鼠标悬停暂停切换
+                                $('.lanrenzhijia').mouseover(function(){
+                                    clearInterval(tabChange);
+                                });
+                                $('.lanrenzhijia').mouseout(function(){
+                                    tabChange = setInterval(autotab,3000);
+                                });
+                              }
+                        });
+                        </script>
+                        <!-- 代码部分end ------------------------->
+                        
+                 	<a class="a1" href="#">新手推荐</a>
+                    
+                 </div>
+                 <!-- 可关闭公告-1 -->
+				<div id="t" class="c2">
+					<div id="say-1"><span onclick="document.getElementById(&#39;say-1&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+					<p>土城地图升级，红砖高清地图，漂亮大气。</p></div>
+                <!-- 可关闭公告-2 -->
+				<div id="say-2"><span onclick="document.getElementById(&#39;say-2&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>增十二生肖弑神塔，共12层，每一层12小怪一个生肖老怪；三层和六层可用生肖令牌随机召唤</p></div>
+
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>生肖老怪；12顶层可用生肖主宰令牌召唤生肖主宰者，有一定几率爆生肖【起源】套物品。
+</p></div>
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>新增盘古之地共三层；一层盘古沼泽；二层盘古开天；三层盘古祭坛。怪物凶猛爆率好，上古、起源、盘古均可爆出。
+</p></div>
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>一层老怪2个二层老怪2个；三层老怪2个，世界BOSS一个，必爆起源、盘古装备；一层、二层BOSS 三小时刷一次,
+</p></div>
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>爆起源、盘古首饰、衣服；三层BOSS6小时刷一次必爆终极装备1个，随机爆其他装备。
+</p></div>
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>新增冰雪神秘新世界，里面有暗之老怪10只，起源天尊1只，起源天尊必爆上古、起源装备。
+</p></div>
+				<!-- 可关闭公告-3 -->
+				<div id="say-3"><span onclick="document.getElementById(&#39;say-3&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p>盘古天尊必爆盘古。本游戏采用目前市场上最新云端网关封挂技术
+</p></div>
+				<!-- 可关闭公告-5 -->
+				<div id="say-5"><span onclick="document.getElementById(&#39;say-5&#39;).style.display=&#39;none&#39;">关闭</span><b>更新通告</b>
+<p><b><font color="#FF00FF"></font><big><font size="3" color="#FF00FF">无秒杀 不变态 人气火爆 散人首选 散人玩家 月入上万
+</font></big><font color="#FF00FF"></font></b></p></div></div>                                 
+       </div><!---id="content"结束------------------------------------->
+       <div  class="content1">
+       		<div class="content-box">
+            	<!-- 服务器列表 -->
+                <div id="form">
+                    <table cellspacing="0" id="be">
+                    <tbody><tr>
+                    <th width="180">服务器名称</th><th width="255">开放时间</th><th width="135">登录器下载</th><th width="150">游戏充值</th><th>灵符充值比例</th>
+                    </tr>
+                    <tr id="bt">
+                    <td>冰雪一区[新区]</td><td>今日10:00准时开放</td><td><a href="https://www.lanzous.com/i4i00na" target="_blank">[下载双线登录器]</a></td><td>
+                    <a target="_blank" href="http://cz5.61card.com/User/Center?Gameid=638612&Groupid=41635">[提前充值赠送30%]</a></td><td>
+                    1:1</td>
+                    </tr>
+                    </tbody></table>
+                </div>
+                <!-- 公告 -->
+                <div id="title"><b>最新公告</b><marquee></marquee></div>
+                <div id="content-new">
+                    <ul>
+                    <li><b>【最新公告】</b>无比例 无待遇 公平公正 不卖经验 不卖装备 公益微变<div id="n"></div></li>
+					<li><b>【最新公告】新区首沙奖150灵符300万元宝，老区攻沙天天奖励100万元宝！</b><div id="n"></div></li>
+					<li><b>【最新公告】首沙奖188人民币二天合区288四天合区388八天合区688战区拿沙1886统战合并3888！</b><div id="n"></div></li>
+                    <li><b>【最新公告】</b>冲级有一系列奖励，数量有限，先到先得<div id="h"></div></li>
+                    <li><b>【最新公告】</b>来吧！提起那尘封多年的兵刃让我们再次相聚冰雪，寻找当年不能
+<div id="h"></div></li>
+                    </ul>
+                </div>
+                <!-- 版本 -->
+                <div id="title-1"><b>版本介绍</b></div>
+                <div id="content-new">
+                    <ul>
+                    <li><b>【版本介绍】</b>本服重金打造唯一单职业冰雪服，新增装备、新增地图、新增老怪、新增活动；新增焚化炉回收灵符
+                    </li>
+                    <li><b>【版本介绍】</b>保证长期散人有混头。所有高级装备均灵符回收。增强一键回收功能</li>
+                    <li><b>【版本介绍】</b>装备：【残】盘古刃；盘古刃；【残】盘古·甲[衣]；十二生肖【上古】、【起源】、【盘古套】</li>
+                    <li><b>【版本介绍】本服绝不会为了赚钱出售变态装备，所有赞助会员只为维持服务器开销，向玩家承诺：只要世界末日不降临，我们绝不关服</b></li>
+                    <li><b>【版本介绍】</b>在游戏冒充GＭ的都是骗子！大家注意，捣乱的死全家．都是公平无待遇！</li>
+                    </ul>
+                </div>
+                <!-- 活动 -->
+				<div id="title-3"><b>活动介绍</b></div>
+                <div id="content-new">
+                    <ul>
+                    <li><b>【活动简介】</b>
+					刺杀活动，寻找半兽人，元宝经验活动。</li>
+                    <li><b>【天降财神】</b>苍月岛出现10个财神，每个财神均可活动5-10万元宝。
+					<div id="h"></div></li>
+                    <li><b>【夺宝奇兵】</b>每天19点30分，定时开展夺宝奇兵，拿到宝箱10分钟活动结束。<div id="h"></div></li>
+                    <li><b>【夺宝奇兵】</b>宝箱可开启5灵符10万元宝和随机高级装备一个，并获得24小时称号一个。</li>
+                    </ul>
+                </div>
+                <!-- 合区 -->
+                <div id="title-3"><b>合区公告</b></div>
+                <div id="content-new">
+                    <ul>
+					<li><b>【合区公告】</b>每天开4个区,第二天下午4-6点不定时维护合区,合区后请重新打开登录器进！</li>
+                    <li><b>【合区公告】</b>本服只合服不关服，当天的新区第二天维护时合为一个区【绝不乱合区】！</li>
+                    <li><b>【合区公告】</b>现在私服玩长久服的少了，仿官服必须以一天多开区的形式，来招引更多的骨灰玩家。希望大家理解。<div id="h"></div></li>
+                    <li><b>【合区公告】</b>如果你所在的区人少了，请不要急，本服会尽快安排合战斗力差不多的区合区。</li>
+                    </ul>
+                </div>
+                <!-- 会员 -->
+                <div id="vip">
+                    <h1><span>一次性充值100送20, 200送50, 300送100，500送200，1000送500，多冲多送！</span>会员充值</h1>
+                    <ul>
+					<li><b>灵符比例</b>1RMB=1灵符 量大可咨询服主。</li>
+					<li><b>会员级别</b>白银会员 40灵符 黄金会员 120灵符 钻石会员 400灵符 至尊会员 1600灵符 至尊会员 防麻痹 1.3倍攻击 1.5倍爆率</li>
+                    <li><b>充多送多少</b>优惠多多,不要谈任何待遇!本服长期稳定运行.</li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </div><!---end content-box结束------------------------------------->
+       	
+       	
+       </div><!---end content1结束------------------------------------->
+       
+       
+       
+       
+       
+       
+     
+       
+       
+       
+       </div><!--------------dody1结束------------------------->
+       
+       
+       
+       
+        <!---QQ在线客服开始-------------------------------------> 
+           
+                <div id="floatTools" class="rides-cs" style="height:246px;">
+                  <div class="floatL">
+                    <a style="display:block" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" href="javascript:void(0);">展开</a>
+                    <a style="display:none" id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" href="javascript:void(0);">收缩</a>
+                  </div>
+                  <div id="divFloatToolsView" class="floatR" style="display: none;height:237px;width: 140px;">
+                    <div class="cn">
+                      <h3 class="titZx">魔域私服</h3>
+                      <ul>
+                        <li><span>客服小刘</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1246107973&site=qq&menu=yes"><img border="0" src="images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+                        <li><span>客服小罗</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2433065774&site=qq&menu=yes"><img border="0" src="images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+                        <li><span>客服小陈</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3385209903&site=qq&menu=yes"><img border="0" src="images/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+                        <li>
+                            <a href="#" target="_blank">微信公众号</a>
+                            <a href="#" target="_blank">新浪微博</a>
+                            <div class="div_clear"></div>
+                        </li>
+                        <li style="border:none;"><span>电话：15625839739</span> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+             <!---QQ在线客服js------------------------------------->     
+				<script type="text/javascript">
+                    $(function(){
+                        $("#aFloatTools_Show").click(function(){
+                            $('#divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('#divFloatToolsView').show();});
+                            $('#aFloatTools_Show').hide();
+                            $('#aFloatTools_Hide').show();				
+                        });
+                        $("#aFloatTools_Hide").click(function(){
+                            $('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+                            $('#aFloatTools_Show').show();
+                            $('#aFloatTools_Hide').hide();	
+                        });
+                    });
+                </script>
+			
+             <!---QQ在线客服结束------------------------------------->             
+        <div id="totop"  style="display: block;"><a href="#nav">返回头部</a></div>  <!--------返回头部--------------->  
+      
+</body>
+</html>
